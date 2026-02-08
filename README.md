@@ -2,9 +2,8 @@
 
 A lightweight CLI that inspects Python files for hallucinated imports and suspect logic using fast AST heuristics and a simple risk scorer.
 
-> Want a demo GIF? Add your recording as `demo.gif` to the repository root.
->
-> `![CLI demo](demo.gif)`
+
+`![CLI demo](demo.gif)`
 
 ## Features
 - Rich, single-command terminal UI with summary and risk panel
