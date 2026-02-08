@@ -2,7 +2,7 @@
 
 A lightweight CLI that inspects Python files for hallucinated imports and suspect logic using fast AST heuristics and a simple risk scorer.
 
-
+> Want a demo GIF? Add your recording as `demo.gif` to the repository root.
 >
 > `![CLI demo](demo.gif)`
 
@@ -28,35 +28,35 @@ python cli.py sample.py
 
 Example output:
 ```
-╭──────────────────────────────────────────────────────────────────────────────╮
-│                                                                              │
-│    AI Hallucination Detector                                                 │
-│                                                                              │
-│    Analyzing File: sample.py                                                 │
-│                                                                              │
-╰──────────────────────────────────────────────────────────────────────────────╯
+
+                                                                              
+    AI Hallucination Detector                                                 
+                                                                              
+    Analyzing File: sample.py                                                 
+                                                                              
+
           Analysis Summary           
-┏━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
-┃ Category           ┃ Result       ┃
-┡━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
-│ Imports Found      │ sklearn.fake │
-├────────────────────┼──────────────┤
-│ Functions Found    │ search       │
-├────────────────────┼──────────────┤
-│ API Hallucinations │ Detected     │
-├────────────────────┼──────────────┤
-│ Logic Issues       │ Detected     │
-└────────────────────┴──────────────┘
+
+ Category            Result       
+
+ Imports Found       sklearn.fake 
+
+ Functions Found     search       
+
+ API Hallucinations  Detected     
+
+ Logic Issues        Detected     
+
 
 Invalid / Hallucinated Imports
- • sklearn.fake
+  sklearn.fake
 
 Logic Issues Detected
- • Possible O(n^2) complexity detected due to nested loops
-╭─ Hallucination Risk Assessment ─╮
-│ Score: 7 / 10                   │
-│ Risk Level: High Risk           │
-╰─────────────────────────────────╯
+  Possible O(n^2) complexity detected due to nested loops
+ Hallucination Risk Assessment 
+ Score: 7 / 10                   
+ Risk Level: High Risk           
+
 ```
 
 ## How it works
