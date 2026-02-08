@@ -3,7 +3,8 @@
 A lightweight CLI that inspects Python files for hallucinated imports and suspect logic using fast AST heuristics and a simple risk scorer.
 
 
-![CLI demo](https://raw.githubusercontent.com/anupam-hegde/AI-Hallucination-Detector-for-Code/main/demo.gif)
+[▶ Watch CLI demo on YouTube](https://www.youtube.com/watch?v=40PZU8grB-8)
+
 ## Features
 - Rich, single-command terminal UI with summary and risk panel
 - API hallucination checks via import validation
